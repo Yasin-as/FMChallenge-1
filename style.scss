@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+
+.card-box{
+    width: 90%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+    .cards{
+        width: 15rem;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        padding: 2rem;
+        color: white;
+
+    }
+    h1{
+        text-transform: uppercase;
+        padding: .5rem;
+        margin-top: 1rem;
+        font-weight: 700;
+        font-size: 2rem;
+        font-family: 'Big Shoulders Display', cursive;
+    }
+    img{
+        padding: .5rem;
+    }
+
+    .sedans{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: #e28525;
+        button{
+            color: #e28525;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+    .suvs{
+        background-color: #036972;
+        button{
+            color: #036972;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+    .luxury{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: #00403f;
+        button{
+            color: #00403f;
+            font-size: 1rem;
+            font-weight: bold;
+            
+        }
+    }
+    p{
+        padding: .5rem;
+        letter-spacing: .5px;
+        margin-top: 2rem;
+        color: hsla(0, 0%, 100%, 0.75);
+
+    }
+    button{
+        background-color: white;
+        border: none;
+        border-radius: 50px;
+        height: 3rem;
+        width: 9rem;
+        margin-top: 4rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    button:hover{
+        background-color: rgba(255, 255, 255, 0.575);
+    }
+    button:active{
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+}
+
+
+@media (max-width: 768px){
+
+    .card-box{
+        margin-top: 5rem;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+}
